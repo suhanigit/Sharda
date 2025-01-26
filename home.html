@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JATAYU - The Rescue Control</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <h1>JATAYU Drone Control</h1>
+    <div class="links">
+      <a href="./index.html" class="map">DRONE MAP</a>
+      <!-- <a href="/about">About</a>
+      <a href="/facts">Facts</a>
+      <a href="/livefeed">Live Feed</a> -->
+    </div>
+  </nav>
+
+  <div class="home">
+    <div class="overlay">
+      <h1>Welcome to JATAYU - Our Multipurpose DRONE</h1>
+      <p>Select a page from the menu to explore!</p>
+
+      <!-- Button with a link (This is a placeholder, as links won't work without a framework like React) -->
+      <a href="./index1.html">
+        <button type="button" class="button">Start Mission</button>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const image1 = "https://cdn-europe1.lanmedia.fr/var/europe1/storage/images/europe1/guide-shopping/notre-top-5-des-drones-a-petit-prix-pour-debuter-4180317/60081340-4-fre-FR/Notre-top-5-des-drones-a-petit-prix-pour-debuter.jpg";
+    const image2 = "https://www.coverdrone.com/wp-content/uploads/2020/06/AdobeStock_150304163-min-scaled.jpeg";
+    const image3 = "https://cdn.futura-sciences.com/buildsv6/images/wide1920/9/e/7/9e73c416ee_131285_canonique-2562.jpg";
+    const image4 = "https://www.coverdrone.com/ca/wp-content/uploads/sites/13/2019/07/AdobeStock_198090207-scaled.jpeg";
+    const image5 = "https://idrproductions.com/wp-content/uploads/2017/10/shutterstock_521421886.jpg";
+
+    const backgroundImages = [
+      image1,
+      image2,
+      image3,
+      image4,
+      image5,
+    ];
+
+    let currentImageIndex = 0;
+
+    const homeElement = document.querySelector('.home');
+    
+    function changeBackgroundImage() {
+      homeElement.style.backgroundImage = `url(${backgroundImages[currentImageIndex]})`;
+      currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+    }
+
+    setInterval(changeBackgroundImage, 4000); // Change image every 4 seconds
+    changeBackgroundImage(); // Set the initial image
+  </script>
+</body>
+</html>

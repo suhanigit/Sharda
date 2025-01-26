@@ -1,0 +1,40 @@
+html{
+    font: 20px "Century Gothic";
+    color:rgb(234, 234, 234);
+    text-align:center;
+}
+h1{
+    font: 28px "Century Gothic";
+}
+hr.rounded {
+    height: 3px; 
+    color: #374557; 
+    background-color: #374557;
+    border: none;
+
+  }
+button {
+    border-radius:10px;
+    font: 22px "Century Gothic"; 
+    background-color: #374557;
+    color:rgb(234, 234, 234);
+    border:none;
+}
+button.small {
+    font: 16px "Century Gothic";
+    background-color: #374557;
+    color:rgb(234, 234, 234);
+    border:none; 
+}
+body {
+    background-color: rgb(33, 33, 33);
+  }
+input {
+    border-radius: 5px; 
+    font: 16px "Century Gothic";
+    background-color: rgb(234, 234, 234);
+    width: 250px; 
+}
+p{
+    font: 16px "Century Gothic";
+  }
